@@ -1,0 +1,22 @@
+{
+  "name": "liftoff-example",
+  "version": "0.0.0",
+  "description": "liftoff example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shgtkshruch/liftoff-example.git"
+  },
+  "author": "shgtkshruch <email>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shgtkshruch/liftoff-example/issues"
+  },
+  "homepage": "https://github.com/shgtkshruch/liftoff-example",
+  "dependencies": {
+    "resolve": "^1.0.0"
+  }
+}
