@@ -3,7 +3,9 @@
 var resolve = require('resolve');
 var findup = require('findup-sync');
 var path = require('path');
-var cwd = process.cwd();
+var argv = require('minimist')(process.argv.slice(2));
+
+var cwd = argv.cwd ? argv.cwd : process.cwd();
 
 var configFile = findup('Hackerfile.js', {cwd: cwd});
 if (configFile) {
@@ -16,7 +18,7 @@ if (configFile) {
 }
 
 try {
-  var localHacker = resolve.sync('hacker', {basedir: process.cwd()});
+  var localHacker = resolve.sync('hacker', {basedir: cwd});
   console.log('Found hacker at', localHacker);
 } catch (e) {
   console.log('Unable to find a local installation of hacker.');

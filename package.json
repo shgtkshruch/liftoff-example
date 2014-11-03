@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "liftoff example",
   "main": "index.js",
+  "bin": {
+    "hacker": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +21,7 @@
   "homepage": "https://github.com/shgtkshruch/liftoff-example",
   "dependencies": {
     "findup-sync": "^0.1.3",
+    "minimist": "^1.1.0",
     "resolve": "^1.0.0"
   }
 }
